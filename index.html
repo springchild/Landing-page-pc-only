@@ -5,125 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luis Barragan</title>
-    <style>
-      a {
-        color: rgb(167, 73, 109);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        transition: all 200ms ease-in-out;
-        text-decoration: none;
-      }
-      a:hover {
-        color: rgba(0, 0, 0, 1);
-        text-decoration: underline;
-      }
-      body {
-        background-attachment: fixed;
-        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/829/original/background.jpg?1631133624");
-        background-size: cover;
-      }
-      button {
-        border: 5px solid rgb(141, 83, 104);
-        box-shadow: 0px 0px 10px rgba(32, 32, 32, 0.5);
-        color: rgb(141, 83, 104);
-        display: block;
-        font-size: 18px;
-        font-weight: bold;
-        margin: 20px auto;
-        padding: 10px 20px;
-        transition: all 200ms ease-in-out;
-      }
-      button:hover {
-        background: rgb(141, 83, 104);
-        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.863);
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-      }
-
-      h1 {
-        background: rgb(240, 164, 0);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-        color: rgb(255, 255, 255);
-        font-size: 40px;
-        font-weight: bold;
-        margin: 20px auto;
-        max-width: 300px;
-        padding: 10px;
-      }
-      h2 {
-        background: rgba(0, 0, 0, 1);
-        box-shadow: 0px 0px 10px rgba(248, 247, 247, 0.4);
-        color: rgb(255, 255, 255);
-        margin: 20px auto;
-        max-width: 400px;
-        padding: 5px;
-      }
-      h3 {
-        background: rgb(161, 98, 122);
-        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-        color: rgb(255, 255, 255);
-        font-weight: normal;
-        margin: 30px auto;
-        max-width: 300px;
-        padding: 10px;
-      }
-      h1,
-      h2,
-      h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-      }
-      li {
-        display: inline;
-        list-style: none;
-        margin: 10px;
-      }
-      p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        line-height: 28px;
-        padding: 0 20px;
-      }
-      ul {
-        padding: 0;
-        text-align: center;
-      }
-      .designedBy {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .footer {
-        background: rgba(210, 217, 224, 0.7);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        margin: 20px auto;
-        max-width: 450px;
-        padding: 30px 30px 20px;
-        text-align: center;
-      }
-      .link-more {
-        padding: 0 20px;
-      }
-      .main {
-        background: rgba(253, 230, 204, 0.8);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        margin: 20px auto;
-        max-width: 800px;
-        padding: 10px 30px 30px;
-      }
-      .portrait {
-        border: 20px solid rgb(255, 255, 255);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        display: block;
-        margin: 0 auto;
-        max-width: 90%;
-        margin-top: 20px;
-      }
-      .works {
-        max-height: 370px;
-        box-shadow: 0px 0px 10px rgba(255, 254, 254, 0.4);
-      }
-    </style>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <h1>Luis Barragán</h1>
@@ -256,20 +138,6 @@
       >
       © 2021
     </div>
-    <script>
-      function subscribe() {
-        let name = prompt(`Hello there! What's your name?`);
-        let email = prompt(
-          `Nice to meet you, ${name}! Now, what's you email address?`
-        );
-        if (name.length > 0 && email.length > 0) {
-          let footer = document.querySelector(".footer");
-          footer.innerHTML = `<div style='font-size:40px; font-weight:bold'>You're all set, ${name}! </div><br />We'll be sure to send some good stuff to <strong>${email}</strong> every week.`;
-        }
-      }
-
-      let signUpButton = document.querySelector("button");
-      signUpButton.addEventListener("click", subscribe);
-    </script>
+    <script src="/src/script.js"></script>
   </body>
 </html>
