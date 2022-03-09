@@ -11,7 +11,7 @@ a:hover {
 }
 body {
   background-attachment: fixed;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/829/original/background.jpg?1631133624");
+  background-image: url("/img/background.jpg");
   background-size: cover;
 }
 button {
